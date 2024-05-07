@@ -3,25 +3,24 @@ import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) {
-        //criando o objeto scanner
+        
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         
-        System.out.println("Prezado usuário, qual seu nome? ");
-        String nome = scanner.next();
+        System.out.println("Dear user, what's your name? ");
+        String name = scanner.next();
         
-        System.out.println("Ótimo, poderia digitar sua agência? ");
-        String agencia = scanner.next();
+        System.out.println("Great, could you type in your agency?");
+        String agency = scanner.next();
 
-        System.out.println("Agora o número da sua conta: ");
-        int numeroDaConta = scanner.nextInt();
+        System.out.println("Now your account number: ");
+        int accountNumber = scanner.nextInt();
         
-        double saldo = 2.432;
+        double balance = 2.432;
 
 
         
-        //imprimindo os dados obtidos pelo usuario
-        System.out.println("OlÁ, " + nome + ", obrigado por criar uma conta em nosso banco, sua agência é: "+ agencia);
-        System.out.println("Seu saldo: "  + saldo + " já está disponível em sua conta " + numeroDaConta +" Para saque" );
+        System.out.println("Hi, " + name + ", Thank you for creating an account with our bank, your branch is: "+ agency);
+        System.out.println("Your balance: "  + balance + " is now available in your account  " + accountNumber + "For Withdrawal" );
        
         
         
